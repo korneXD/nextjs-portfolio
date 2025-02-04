@@ -21,7 +21,7 @@ export default function Home() {
           />
         </div>
         <p className="text-green-600 font-cubano italic text-2xl">
-          Halmosi Kornéltot
+          Halmosi Kornél
         </p>
         <p className="text-white text-center font-nohemiLight text-2xl tracking-wide">
           2 éve foglalkozom weboldal készítéssel, <br />
