@@ -13,8 +13,7 @@ export default async function sendEmail(formData) {
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "korcika2005@gmail.com",
-      subject: "Portfólió",
-      reply_to: email,
+      subject: "Portfólió - " + email,
       text: message,
     });
   } catch (error) {
