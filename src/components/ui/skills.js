@@ -10,15 +10,17 @@ export default function Skills() {
     { title: "Firebase" },
   ];
   return (
-    <div className="flex justify-center items-center w-full h-fit bg-black flex-col">
-      <h1 className="text-2xl font-cubano uppercase text-green-600">Skills</h1>
-      <div className="w-[40%] flex justify-center items-center flex-row flex-wrap gap-2 py-6">
+    <div className="flex h-fit w-full flex-col items-center justify-center bg-black px-4">
+      <h1 className="font-cubano text-2xl uppercase text-cyan-600">
+        Tapasztalataim
+      </h1>
+      <div className="flex w-full flex-row flex-wrap items-center justify-center gap-2 py-6 md:w-[40%]">
         {skills.map((e, index) => (
           <div
             key={index}
-            className="flex justify-center items-center w-fit h-fit px-2 rounded-lg bg-green-600"
+            className="flex h-fit w-fit items-center justify-center rounded-lg border border-gray-600 bg-cyan-500 px-2"
           >
-            <h1 className="text-white uppercase font-cubano text-xl">
+            <h1 className="font-cubano text-xl uppercase text-black">
               {e.title}
             </h1>
           </div>

@@ -1,5 +1,5 @@
 export const links = [
-  { name: "Home", path: "/" },
+  { name: "Föoldal", path: "/" },
   { name: "Kontakt", path: "/contact" },
   { name: "Projektek", path: "/projects" },
 ];
@@ -25,5 +25,5 @@ export const projects = [
     path: "https://pizzanapoly.netlify.app/",
     github: "https://github.com/korneXD/Pizza",
   },
-  { name: "Budget Manager - Fejlesztés alatt.", path: "", github: "" },
+  { name: "Budget Manager - Fejlesztés alatt", path: "", github: "" },
 ];

@@ -6,56 +6,31 @@ export default function Project() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div className="flex justify-center gap-10 px-4 items-center w-full h-screen bg-black flex-row flex-wrap py-16">
+    <div className="flex h-fit w-full flex-row flex-wrap items-center justify-center gap-10 bg-black px-4 py-16">
       {projects.map((e) => (
         <div
           key={e.name}
-          className="flex justify-center items-center w-96
-              h-64
-              max-h-64"
+          className="flex h-64 w-96 items-center justify-center"
         >
           <div
-            className="
-              w-96
-              h-64
-              flex
-              justify-center
-              items-end
-              p-4
-              absolute
-              overflow-hidden
-              rounded-lg
-              z-10
-              bg-cover
-              bg-no-repeat
-              bg-center
-              before:content-['']
-              before:absolute
-              before:inset-0
-              before:block
-              before:bg-gradient-to-t
-              before:from-35%
-              before:from-black border border-gray-600
-              before:to-black/50
-              to-10%
-              before:z-[-5]"
+            className="absolute z-10 flex h-64 w-[90%] max-w-96 items-end justify-center overflow-hidden rounded-lg border border-gray-600 to-10% bg-cover bg-center bg-no-repeat p-4 before:absolute before:inset-0 before:z-[-5] before:block before:bg-gradient-to-t before:from-black before:from-35% before:to-black/50 before:content-['']"
             style={{
               backgroundImage:
                 'url("https://res.cloudinary.com/simpsonsblog/image/upload/v1736939227/dzhphc3cl42amxonku4u.png")',
             }}
           >
-            <div className="flex flex-col gap-2 w-full">
-              <p className="h-12 overflow-y-clip text-ellipsis font-cubano text-white text-lg">
+            <div className="flex w-full flex-col gap-2">
+              <p className="h-12 overflow-y-clip text-ellipsis font-cubano text-lg text-white">
                 {e.name}
               </p>
-              <div className="relative flex justify-center items-center">
+              <div className="relative flex items-center justify-center">
                 <a
                   href={e.github}
                   target="_blank"
                   className={
                     e.github != ""
-                      ? "flex w-fit absolute left-0 bottom-0"
-                      : "flex w-fit absolute left-0 bottom-0 pointer-events-none"
+                      ? "absolute bottom-0 left-0 flex w-fit"
+                      : "pointer-events-none absolute bottom-0 left-0 flex w-fit"
                   }
                 >
                   <Github />
@@ -65,13 +40,13 @@ export default function Project() {
                   target="_blank"
                   className={
                     e.path != ""
-                      ? "bg-green-600 p-2 rounded-lg w-max mx-auto font-cubano text-black text-xl"
-                      : "bg-green-950 p-2 pointer-events-none rounded-lg w-max mx-auto font-cubano text-black text-xl"
+                      ? "mx-auto w-max rounded-lg bg-cyan-600 p-2 font-cubano text-xl text-black transition-all hover:scale-105"
+                      : "pointer-events-none mx-auto w-max rounded-lg bg-cyan-950 p-2 font-cubano text-xl text-black"
                   }
                 >
                   Megnyitás
                 </Link>
-                <p className="absolute right-0 bottom-0 text-white font-cubano">
+                <p className="absolute bottom-0 right-0 font-cubano text-white">
                   {year}
                 </p>
               </div>
