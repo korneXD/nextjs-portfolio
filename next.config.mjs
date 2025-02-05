@@ -1,4 +1,13 @@
 import MillionLint from "@million/lint";
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "a8zxpsghra.ufs.sh",
+      },
+    ],
+  },
+};
 
 export default MillionLint.next({ rsc: true })(nextConfig);
