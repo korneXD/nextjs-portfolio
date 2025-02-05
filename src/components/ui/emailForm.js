@@ -9,7 +9,14 @@ export default function EmailForm() {
 
   return (
     <>
-      <Image src={"/contact.avif"} width={200} height={200} alt="contact" />
+      <Image
+        src={
+          "https://a8zxpsghra.ufs.sh/f/LoG2vOGbBJHwl9DUXM3ZwhlzUKtMpgJFfGsD9yj01RILYvH5"
+        }
+        width={200}
+        height={200}
+        alt="contact"
+      />
       <div className="flex h-fit w-fit flex-col items-center justify-center gap-4 rounded-xl border border-gray-600 px-8 py-8">
         <h1 className="font-cubano text-2xl text-white">
           Küldj nekem üzenetet!
