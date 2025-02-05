@@ -7,7 +7,7 @@ export default function MainPage() {
     <div className="relative flex h-screen w-full flex-col items-center justify-center gap-4 bg-black px-4">
       <Image
         src={
-          "https://a8zxpsghra.ufs.sh/f/LoG2vOGbBJHwgkNg9IhHyQAnXUa2v4EcOrVM8YsC7jmBof3S"
+          "https://utfs.io/a/a8zxpsghra/LoG2vOGbBJHwgkNg9IhHyQAnXUa2v4EcOrVM8YsC7jmBof3S"
         }
         width={200}
         height={200}

@@ -11,7 +11,7 @@ export default function EmailForm() {
     <>
       <Image
         src={
-          "https://a8zxpsghra.ufs.sh/f/LoG2vOGbBJHwl9DUXM3ZwhlzUKtMpgJFfGsD9yj01RILYvH5"
+          "https://utfs.io/a/a8zxpsghra/LoG2vOGbBJHwl9DUXM3ZwhlzUKtMpgJFfGsD9yj01RILYvH5"
         }
         width={200}
         height={200}
